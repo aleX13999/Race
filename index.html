@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гонки. Часть 2</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-part">
+            <div class="score">Счет</div>
+            <!-- /.score -->
+
+            <div class="track"></div>
+            <!-- /.track -->
+
+            <button class="start">СТАРТ</button>
+            <!-- /.buttons-section -->
+            <div class="move_section hide">
+
+                <button class="move_button" id="button_left">
+            <?xml version="1.0" ?><svg
+              id="Layer_1"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: #fca311;
+                }
+              </style>
+              <path
+                class="st0"
+                d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+              />
+            </svg>
+          </button>
+
+                <button class="move_button" id="button_up">
+              <?xml version="1.0" ?><svg
+                id="Layer_1"
+                style="enable-background: new 0 0 64 64"
+                version="1.1"
+                viewBox="0 0 64 64"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #fca311;
+                  }
+                </style>
+                <path
+                  class="st0"
+                  d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+                />
+              </svg>
+            </button>
+
+                <button class="move_button" id="button_down">
+            <?xml version="1.0" ?><svg
+              id="Layer_1"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: #fca311;
+                }
+              </style>
+              <path
+                class="st0"
+                d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+              />
+            </svg>
+          </button>
+                <button class="move_button" id="button_right">
+            <?xml version="1.0" ?><svg
+              id="Layer_1"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: #fca311;
+                }
+              </style>
+              <path
+                class="st0"
+                d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+              />
+            </svg>
+          </button>
+            </div>
+        </div>
+        <!-- /.left-part -->
+        <!-- <div class="right-part">
+            <div class="results">Результаты</div>
+        </div>
+        /.right-part
+        </div> -->
+        <script src="js/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* Стили макета */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.score {
+    background-color: #14213d;
+    color: #fca311;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.track {
+    background-color: #222;
+    height: 100%;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.move_section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    color: #fca311;
+}
+
+.move_button {
+    width: 50px;
+    height: 50px;
+    background: #14213d;
+    z-index: 10;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.move_button:hover {
+    cursor: pointer;
+    background: #1b294b;
+}
+
+#button_left {
+    transform: rotate(180deg);
+}
+
+#button_up {
+    transform: rotate(270deg);
+}
+
+#button_down {
+    transform: rotate(90deg);
+}
+
+
+/* Классы для игры */
+
+.hide {
+    /* Скрываем кнопку начала игры */
+    display: none;
+}
+
+.car,
+.enemy {
+    /* Парамметры для машинок */
+    width: 50px;
+    height: 100px;
+    position: absolute;
+}
+
+.line {
+    /* Линии на дороге */
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: #e5e5e5;
+    left: 145px;
+}
+
+.start {
+    background: #14213d;
+    padding: 20px;
+    color: #fca311;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    z-index: 10;
+    border-style: none;
+}
+
+.start:hover {
+    cursor: pointer;
+    background: #1b294b;
+}
+
+@media (max-width: 360px) {
+    .left-part {
+        width: 100vw;
+    }
+    .track {
+        width: 100vw;
+    }
+}
